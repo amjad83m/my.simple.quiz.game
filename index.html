@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Simple Quiz Game</title>
+        <meta name="description" content="A simple quiz game in JavaScript, using JSON data source">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="author" content="Amjad Muhammad">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Oswald%7CCoiny%7CArimo" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <header>
+            <h1>My Simple Quiz Game</h1>
+                <h2>You have 20 seconds to answer each question!</h2>
+                <p id="quiz-timer-p">&nbsp;</p>
+            </header>
+            
+            <div id="quiz-div">
+                <input type="button" id="start-btn" value="Start Game" onclick="startGame();"><br>
+                <p id="question-p"></p>
+                <form>
+                    <input type="button" name="q-btn" class="answers" id="answer1" onclick="getBtnValue('answer1'); getNextQuestion(); blur();"><br>
+                    <input type="button" name="q-btn" class="answers" id="answer2" onclick="getBtnValue('answer2'); getNextQuestion(); blur();"><br>
+                    <input type="button" name="q-btn" class="answers" id="answer3" onclick="getBtnValue('answer3'); getNextQuestion(); blur();"><br>
+                    <input type="button" name="q-btn" class="answers" id="answer4" onclick="getBtnValue('answer4'); getNextQuestion(); blur();"><br>
+                </form>
+            </div>
+
+            <script type="text/javascript" src="quizdata.js"></script>
+            <script type="text/javascript" src="scripts.js"></script>
+        </div>
+    </body>
+</html>
