@@ -16,10 +16,10 @@ the score of this question is set to 0 and the next question is loaded automatic
 * When answering, a new question is loaded, and the score of the previously answered question is calculated according
 to the time when it was answered, as follows:
 
-..* 5 seconds or less, score is 10 (highest score)
-..* Between 6 and 10 seconds, score is 8
-..* Between 11 and 15 seconds, score is 6
-..* Between 16 and 20 seconds, score is only 4 (lowest score)
+⋅⋅* 5 seconds or less, score is 10 (highest score)
+⋅⋅* Between 6 and 10 seconds, score is 8
+⋅⋅* Between 11 and 15 seconds, score is 6
+⋅⋅* Between 16 and 20 seconds, score is only 4 (lowest score)
 
 When there are no more questions, the game ends, and the total score is displayed.
 
