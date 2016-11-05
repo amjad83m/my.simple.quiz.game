@@ -50,7 +50,7 @@ h2 {
     visibility: hidden;
 }
 
-.answers:hover, .answers:focus {
+.answers:hover {
     background-color: white;
     color: #79148E;
 }
