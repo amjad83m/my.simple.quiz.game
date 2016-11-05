@@ -8,15 +8,18 @@ corresponding score. The questions in this version are all about Computer Scienc
 added easily (planned future update).
 
 ## Usage
-The UI is so descriptive, you start the game by clicking the "Start Game" button, and you can reset the game by
-pressing it again (starting a new game and ignoring the current one). Each question has a limit of 20 seconds to
-be answered. If not, the score of this question is 0 and the next question is loaded automatically.
-When answering, the score of the question is calculated according to the time when it was answered, as follows:
+* The UI is so descriptive, you start the game by clicking the "Start Game" button, and you can reset the game by
+pressing it again (starting a new game and ignoring the current one).
+* You answer a question by clicking the desired answer (one of the 4 displayed answers).
+* Each question has a limit of 20 seconds to be answered. If the time is up and the user hasn't clicked an answer,
+the score of this question is set to 0 and the next question is loaded automatically.
+* When answering, a new question is loaded, and the score of the previously answered question is calculated according
+to the time when it was answered, as follows:
 
-* 5 seconds or less, score is 10 (highest score)
-* Between 6 and 10 seconds, score is 8
-* Between 11 and 15 seconds, score is 6
-* Between 16 and 20 seconds, score is only 4 (lowest score)
+** 5 seconds or less, score is 10 (highest score)
+** Between 6 and 10 seconds, score is 8
+** Between 11 and 15 seconds, score is 6
+** Between 16 and 20 seconds, score is only 4 (lowest score)
 
 When there are no more questions, the game ends, and the total score is displayed.
 
