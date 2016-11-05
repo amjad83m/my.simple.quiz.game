@@ -30,7 +30,7 @@ When there are no more questions, the game ends, and the total score is displaye
 * Adding the possibility to add valid questions/answers to the game by registered users.
 
 ## Live Version
-You can test a working demo [here]().
+You can test a working demo [here](https://amjad83m.github.io/my.simple.quiz.game/).
 
 ## Credits
 Code and design by [Amjad Muhammad](https://github.com/amjad83m).
