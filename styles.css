@@ -48,6 +48,7 @@ h2 {
     font-family: 'Arimo', sans-serif;
     font-size: 15px;
     visibility: hidden;
+    outline: none;
 }
 
 .answers:hover {
@@ -65,6 +66,7 @@ h2 {
     background-color: #79148E;
     font-family: 'Arimo', sans-serif;
     font-size: 18px;
+    outline: none;
 }
 
 #question-p {
