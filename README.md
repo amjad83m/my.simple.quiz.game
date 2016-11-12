@@ -28,7 +28,7 @@ When there are no more questions, the game ends, and the total score is displaye
  1. The result of each question is displayed.
  2. The answers are displayed in different order each time the game is played.
  3. The number of questions can be selected.
- 4. Helpful tooltip text for the score calculation (when hovering over the main 20 seconds rule)
+ 4. Helpful tooltip text for the score calculation (when hovering over the main "20 seconds" rule)
 * 4/11/2016 The initial version.
 
 ## Planned Updates
