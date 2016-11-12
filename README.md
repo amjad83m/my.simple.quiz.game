@@ -24,10 +24,14 @@ to the time when it was answered, as follows:
 When there are no more questions, the game ends, and the total score is displayed.
 
 ## History
+* 11/11/2016 Updates:
+ 1. The result of each question is displayed.
+ 2. The answers are displayed in different order each time the game is played.
+ 3. The number of questions can be selected.
+ 4. Helpful tooltip text for the score calculation (when hovering over the main 20 seconds rule)
 * 4/11/2016 The initial version.
 
 ## Planned Updates
-* Adding the possibility to choose the number of available questions per game.
 * Adding the possibility to choose different quiz subjects (categories).
 * Adding the possibility to register users (membership), and keeping track of their score.
 * Adding the possibility to add valid questions/answers to the game by registered users.
