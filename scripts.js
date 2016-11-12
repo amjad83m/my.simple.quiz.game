@@ -20,10 +20,12 @@ var score = 0;
 // a global variable that will hold the moment when the user answered the question, the seconds counter
 var elapsedSeconds = 1;
 
+var numberOfQuestions = 0;
+
 var questionP = document.getElementById("question-p");
 var qButtons = document.getElementsByName("q-btn");
 var quizTimerP = document.getElementById("quiz-timer-p");
-
+var questionScoreP = document.getElementById("question-score-p");
 var myInterval;
 
 /* looping through the resulting Quiz object array, reading each Object's data properties and values and printing them to the 
@@ -38,25 +40,37 @@ for (var i = 0; i < quizCol.length; i++) {
 */
 
 function startGame() {
-    resetGame();
-    getNextQuestion();
-    myInterval = setInterval(displaySeconds, 1000);
+    if (numberOfQuestions != 0) {
+        resetGame();
+        getNextQuestion();
+        myInterval = setInterval(displaySeconds, 1000);
+    } else {
+        alert("Please select a number of questions to play!");
+    }
 }
 
 // a function that loads the data (question, answers) of a Quiz object into the HTML page
 function loadQuiz(quizObj) {
     
+    // loading the answers randomly, by generating a random starting index
+    var startingIndex = getRandomInt(0, 3);
+    
     questionP.innerHTML = quizObj.question;
     
     for (var i = 0; i < quizObj.possibleAnswers.length; i++) {
-        qButtons[i].value = quizObj.possibleAnswers[i];
+        
+        // making sure to go back to the first element of the possible answers after reaching the end
+        startingIndex %= quizObj.possibleAnswers.length;
+        
+        qButtons[i].value = quizObj.possibleAnswers[startingIndex];
+        startingIndex++;
     }
 }
 
 // the function to utilize loadQuiz function, loading Quiz objects with each call until they are finished
 function getNextQuestion() {
-    if (currentQ == quizCol.length) {
-        questionP.innerHTML = "Your score is: " + score + " points out of " + (quizCol.length * 10);
+    if (currentQ == numberOfQuestions) {
+        questionP.innerHTML = "Your score is: " + score + " points out of " + (numberOfQuestions * 10);
         clearInterval(myInterval);
         quizTimerP.style.visibility = "hidden";
         
@@ -91,7 +105,13 @@ function getBtnValue(buttonId) {
         
         // for accuracy, the specific moment (second) of the click on an answer button is (answerMoment - 1) and not answerMoment (interval issue)
         questionScore = calcQuestionScore(answerMoment - 1);
+        
+        questionScoreP.innerHTML = questionScore;
+        
         score += questionScore;
+    } else {
+        // the score is 0, just write it to the page
+        questionScoreP.innerHTML = questionScore;
     }
 }
 
@@ -132,4 +152,15 @@ function resetGame() {
     currentQ = 0;
     score = 0;
     quizTimerP.style.visibility = "visible";
+    questionScoreP.innerHTML = "";
+}
+
+// A function to generate a random integer between min and max "inclusive" - MDN (Mozilla Developer Network)
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getNumberOfQuestions() {
+    var questionCountSelect = document.getElementById("question-count-select");
+    numberOfQuestions = parseInt(questionCountSelect.value);
 }

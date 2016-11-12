@@ -140,7 +140,7 @@
     "rightAnswer": "Perl"
   },
   {
-    "question": "Which of these programs is typically one of the first to be executed when a computer starts?",
+    "question": "Which of these programs is one of the first to be executed when a computer starts?",
     "possibleAnswers": [
       "Memory Manager",
       "Bootloader",
@@ -148,5 +148,105 @@
       "Task Scheduler"
     ],
     "rightAnswer": "Bootloader"
+  },
+  {
+    "question": "Which company collaborated with Microsoft to build OS/2?",
+    "possibleAnswers": [
+      "IBM",
+      "HP",
+      "Xerox",
+      "Apple"
+    ],
+    "rightAnswer": "IBM"
+  },
+  {
+    "question": "Which is a method of interprocess communication under Microsoft Windows?",
+    "possibleAnswers": [
+      "MS-RPC",
+      "Inter-Thread Transport",
+      "Dynamic Data Exchange",
+      "MS-Arhicom"
+    ],
+    "rightAnswer": "Dynamic Data Exchange"
+  },
+  {
+    "question": "What does an SSL certificate do?",
+    "possibleAnswers": [
+      "Tells websites about you",
+      "Blocks spam from webpages",
+      "Tracks your web surfing",
+      "Validates website authenticity"
+    ],
+    "rightAnswer": "Validates website authenticity"
+  },
+  {
+    "question": "Which of the following are VPN tunneling protocols?",
+    "possibleAnswers": [
+      "L2TP",
+      "PPTP",
+      "IPsec",
+      "All of these"
+    ],
+    "rightAnswer": "All of these"
+  },
+  {
+    "question": "Which of these is a famous text editor?",
+    "possibleAnswers": [
+      "Vim",
+      "Grep",
+      "Find",
+      "Pipe"
+    ],
+    "rightAnswer": "Vim"
+  },
+  {
+    "question": "What does the (RS) in RS-232 stand for?",
+    "possibleAnswers": [
+      "Recommended Standard",
+      "Request to Send",
+      "Request Standard",
+      "Ready to Send"
+    ],
+    "rightAnswer": "Recommended Standard"
+  },
+  {
+    "question": "Which intermediate form are Java programs compiled to?",
+    "possibleAnswers": [
+      "C",
+      "Macros",
+      "Machine Language",
+      "Bytecode"
+    ],
+    "rightAnswer": "Bytecode"
+  },
+  {
+    "question": "Which of these is NOT a type of algorithm?",
+    "possibleAnswers": [
+      "Parallel",
+      "Randomized",
+      "Distributed",
+      "Straightforward"
+    ],
+    "rightAnswer": "Straightforward"
+  },
+  {
+    "question": "A segment in an IPv6 addresses can be any any hexadecimal value from 0 to?",
+    "possibleAnswers": [
+      "1000",
+      "FFFF",
+      "1024",
+      "8092"
+    ],
+    "rightAnswer": "FFFF"
+  },
+  {
+    "question": "which of these concepts in databases did Edgar Codd invent?",
+    "possibleAnswers": [
+      "NoSQL",
+      "Indexing",
+      "Relational Model",
+      "Concurrency"
+    ],
+    "rightAnswer": "Relational Model"
   }
 ]

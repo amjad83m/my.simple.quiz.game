@@ -27,15 +27,6 @@ h1 {
     font-family: 'Coiny', cursive;
 }
 
-h2 {
-    background-color: #C074D0;
-    color: #79148E;
-    border-radius: 5px;
-    padding: 5px 0px;
-    outline: none;
-    font-family: 'Oswald', sans-serif;
-}
-
 .answers {
     cursor: pointer;
     width: 100%;
@@ -65,8 +56,9 @@ h2 {
     color: white;
     background-color: #79148E;
     font-family: 'Arimo', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     outline: none;
+    font-weight: bold;
 }
 
 #question-p {
@@ -77,13 +69,73 @@ h2 {
     font-family: 'Arimo', sans-serif;
 }
 
-#quiz-timer-p {
-    font-size: 30px;
-    font-weight: bolder;
+#quiz-timer-p, #question-score-p {
+    font-size: 24px;
+    font-weight: bold;
     font-family: 'Oswald', sans-serif;
     color: white;
+    display: inline;
 }
 
+#timer-label-p, #question-score-label-p, .game-rules {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#timer-label-p, #question-score-label-p {
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    color: #79148E;
+}
+
+.generic {
+    display: inline;
+    padding: 20px;
+}
+
+.game-rules {
+    position: relative;
+    display: inline-block;
+    background-color: #C074D0;
+    color: #79148E;
+    border-radius: 5px;
+    padding: 5px 0px;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.game-rules .game-rules-tooltip {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    color: #79148E;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1;
+    bottom: 100%;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 16px;
+    font-weight: normal;
+}
+.game-rules:hover .game-rules-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#question-count-select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+}
 @media screen and (min-width: 1024px) {
     #wrapper {
         width: 1024px;

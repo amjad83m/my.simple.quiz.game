@@ -13,12 +13,23 @@
     <body>
         <div id="wrapper">
             <header>
-            <h1>My Simple Quiz Game</h1>
-                <h2>You have 20 seconds to answer each question!</h2>
-                <p id="quiz-timer-p">&nbsp;</p>
+                <h1>My Simple Quiz Game</h1>
+                <div class="game-rules">You have 20 seconds to answer each question!
+                <span class="game-rules-tooltip">Points:<br>5 seconds or less: 10<br>Between 6 and 10 seconds: 8<br>Between 11 and 15 seconds: 6<br>Between 16 and 20 seconds: 4</span>
+                </div><br>
+                <div class="generic"><p id="timer-label-p">Time: </p><p id="quiz-timer-p"></p></div>
+                <div class="generic"><p id="question-score-label-p">Score: </p><p id="question-score-p"></p></div>
             </header>
             
             <div id="quiz-div">
+                <select id="question-count-select" onchange="getNumberOfQuestions();">
+                    <option selected="selected" disabled="disabled">Number of Questions</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                </select><br>
                 <input type="button" id="start-btn" value="Start Game" onclick="startGame();"><br>
                 <p id="question-p"></p>
                 <form>
